@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    width: 21cm;
+    height: 29.7cm;
+    border: 5px solid red;
+}
