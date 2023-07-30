@@ -1,4 +1,5 @@
 body {
+    --gold: #ffce53;
     display: flex;
     justify-content: center;
 }
@@ -7,4 +8,50 @@ body {
     width: 21cm;
     height: 29.7cm;
     border: 5px solid red;
+    display: grid;
+    grid-template-areas: 
+    'portret contact'
+    'experience-header experience-description'
+    'projects-header projects-description'
+    'skills-header skills-description'
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0
+}
+
+.container {
+    padding: 32px;
+}
+
+.filled {
+    background: purple;
+    color: whitesmoke
+}
+
+#contact {
+    height: calc(100% - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contact h1 {
+    color: var(--gold);
+}
+
+#experience-title {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#experience-title>p {
+    margin: 8px;
+    width: 150px;
 }
