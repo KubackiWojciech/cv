@@ -16,7 +16,7 @@ body {
     'skills-header skills-description'
     ;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--gold);
 }
 
-#experience-title {
+.title {
     font-size: 60px;
     display: flex;
     justify-content: center;
@@ -51,7 +51,50 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
-#experience-title>p {
+.title>p {
     margin: 8px;
     width: 150px;
+}
+
+#experience-title {
+    color: var(--gold);
+}
+
+#experience-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projects-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#projects-description a, #projects-description p {
+    margin-left: 15px;
+}
+
+#projects-description h3 {
+    color: var(--gold);
+}
+
+#projects-description a {
+    font-size: 12px;
+}
+
+#projects-description p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#skills-title {
+    color: var(--gold);
+}
+
+#skills-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
